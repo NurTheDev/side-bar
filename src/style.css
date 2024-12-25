@@ -28,7 +28,7 @@ body {
   background: #d93aff;
 }
 .expandedSideBar {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100vh;
   justify-content: space-around;
@@ -100,4 +100,45 @@ li span {
   color: var(--primary-color);
   padding: 5px 10px;
   border-radius: 5px;
+}
+.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.profile h2 {
+  font-size: 1.5rem;
+  color: var(--heading);
+}
+.profile a {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+/* collaps Side bar */
+.collapseSideBar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-around;
+  background: var(--background);
+  backdrop-filter: blur(5.528571605682373px);
+  width: 300px;
+  border-radius: 0 24.571px 24.571px 0;
+  border: 0.614px solid #000;
+  -webkit-border-radius: 0 24.571px 24.571px 0;
+  -moz-border-radius: 0 24.571px 24.571px 0;
+  -ms-border-radius: 0 24.571px 24.571px 0;
+  -o-border-radius: 0 24.571px 24.571px 0;
+  padding: 0 15px;
 }
